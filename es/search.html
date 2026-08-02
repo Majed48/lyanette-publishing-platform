@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Buscar — Mensajes de Dios al Corazón</title>
+<meta name="description" content="Busca en el sitio de Mensajes de Dios al Corazón: el libro, capítulos de muestra, blog, tienda y más.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,500&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/styles.css">
+<link rel="icon" href="../assets/logo/favicon.svg" type="image/svg+xml">
+</head>
+<body>
+<a class="skip-link" href="#main">Saltar al contenido</a>
+<header class="site-header" id="site-header" data-od-id="site-header">
+<div class="container header-row">
+  <a class="wordmark" href="index.html">Lyanette Valiente<small>Mensajes de Dios al Corazón</small></a>
+  <nav class="main-nav" aria-label="Principal"><ul>
+    <li><a href="index.html">Inicio</a></li>
+    <li><a href="book.html">El libro</a></li>
+    <li><a href="store.html">Tienda</a></li>
+    <li><a href="reader.html">Lector</a></li>
+    <li><a href="author.html">Autora</a></li>
+    <li><a href="blog.html">Blog</a></li>
+    <li><a href="devotionals.html">Devocionales</a></li>
+    <li><a href="contact.html">Contacto</a></li>
+  </ul></nav>
+  <div class="header-tools">
+    <div class="lang-toggle" role="group" aria-label="Idioma / Language">
+      <a href="search.html" class="active" aria-current="true">ES</a>
+      <a href="../en/search.html">EN</a>
+    </div>
+    <a class="icon-btn" href="search.html" aria-label="Buscar">
+      <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
+    </a>
+    <a class="icon-btn" href="cart.html" aria-label="Carrito">
+      <svg viewBox="0 0 24 24"><path d="M4 6h2l1.6 10.2A2 2 0 0 0 9.6 18h7.8a2 2 0 0 0 2-1.6L21 9H7"/><circle cx="10" cy="21" r="1"/><circle cx="18" cy="21" r="1"/></svg>
+      <span class="cart-badge" id="cart-badge" data-count="0">0</span>
+    </a>
+    <button type="button" class="icon-btn menu-toggle" id="menu-toggle" aria-label="Menú" aria-expanded="false">
+      <svg viewBox="0 0 24 24"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+    </button>
+  </div>
+</div>
+<nav class="mobile-nav" id="mobile-nav" aria-label="Mobile"><ul>
+  <li><a href="index.html">Inicio</a></li>
+  <li><a href="book.html">El libro</a></li>
+  <li><a href="store.html">Tienda</a></li>
+  <li><a href="reader.html">Lector</a></li>
+  <li><a href="author.html">Autora</a></li>
+  <li><a href="blog.html">Blog</a></li>
+  <li><a href="devotionals.html">Devocionales</a></li>
+  <li><a href="contact.html">Contacto</a></li>
+  <li><a href="cart.html">Carrito</a></li>
+  <li><a href="account.html">Mi cuenta</a></li>
+</ul></nav>
+</header>
+
+<main id="main">
+
+  <!-- HERO / SEARCH -->
+  <section class="grain" data-od-id="search-hero" style="padding-top:var(--space-6);">
+    <div class="container center">
+      <span class="eyebrow" style="justify-content:center;">Buscar</span>
+      <h1 style="margin:var(--space-2) auto;max-width:26ch;">¿Qué estás buscando?</h1>
+      <p class="lede muted" style="max-width:52ch;margin:0 auto var(--space-3);">Busca entre el libro, el blog, la tienda y las páginas de ayuda de Mensajes de Dios al Corazón.</p>
+      <div style="max-width:520px;margin:0 auto;">
+        <input class="field" style="width:100%;font-size:17px;padding:14px 16px;" type="search" id="search-input" placeholder="Escribe una palabra clave…" aria-label="Buscar en el sitio" data-od-id="search-input">
+      </div>
+    </div>
+  </section>
+
+  <!-- RESULTS -->
+  <section data-od-id="search-results-section">
+    <div class="container" style="max-width:820px;">
+      <p class="muted" id="search-status" style="margin-bottom:var(--space-3);"></p>
+      <div id="search-results" data-od-id="search-results" style="display:flex;flex-direction:column;gap:14px;"></div>
+      <div id="search-empty" data-od-id="search-empty" style="display:none;text-align:center;padding:var(--space-4) 0;">
+        <span class="eyebrow" style="justify-content:center;">Sin resultados</span>
+        <h3 style="margin:var(--space-2) auto;max-width:32ch;">No encontramos nada con esas palabras</h3>
+        <p class="muted" style="max-width:44ch;margin:0 auto;">Intenta con otra palabra clave, o explora directamente el libro y la tienda.</p>
+        <div style="display:flex;gap:12px;flex-wrap:wrap;justify-content:center;margin-top:var(--space-3);">
+          <a class="btn btn-outline" href="book.html">Ver el libro</a>
+          <a class="btn btn-ghost" href="contact.html">Contáctanos →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer" id="site-footer" data-od-id="site-footer">
+<div class="container">
+  <div class="footer-grid">
+    <div>
+      <div class="footer-word"><svg class="sprig" viewBox="0 0 40 16" aria-hidden="true"><path d="M1 8c8-8 16-8 20-8s10 0 18 8c-8 8-14 8-18 8S9 16 1 8Z" fill="none" stroke="currentColor" stroke-width="1"/><path d="M20 0v16M8 4c2 2 3 4 3 4s-1 2-3 4M32 4c-2 2-3 4-3 4s1 2 3 4" stroke="currentColor" stroke-width=".8" fill="none"/></svg></div>
+      <p class="muted" style="color:rgba(var(--bg-rgb),.7);max-width:32ch;font-size:14px;">Mensajes de Dios al Corazón — un devocional de Lyanette Valiente para caminar cada día con esperanza.</p>
+    </div>
+    <div><h5>Explorar</h5><ul>
+      <li><a href="book.html">El libro</a></li>
+      <li><a href="author.html">Autora</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="devotionals.html">Devocionales</a></li>
+      <li><a href="reader.html">Lector</a></li>
+    </ul></div>
+    <div><h5>Tienda</h5><ul>
+      <li><a href="store.html">Tienda digital</a></li>
+      <li><a href="cart.html">Carrito</a></li>
+      <li><a href="account.html">Mi cuenta</a></li>
+      <li><a href="search.html">Buscar</a></li>
+    </ul></div>
+    <div><h5>Comunidad</h5><ul>
+      <li><a href="prayer-requests.html">Peticiones de oración</a></li>
+      <li><a href="newsletter.html">Boletín</a></li>
+      <li><a href="contact.html">Contacto</a></li>
+    </ul></div>
+    <div><h5>Ayuda</h5><ul>
+      <li><a href="faq.html">Preguntas frecuentes</a></li>
+      <li><a href="privacy.html">Privacidad</a></li>
+      <li><a href="terms.html">Términos</a></li>
+      <li><a href="cookies.html">Cookies</a></li>
+    </ul></div>
+  </div>
+  <div class="footer-bottom">
+    <span>&copy; 2026 Lyanette Valiente. Todos los derechos reservados.</span>
+    <span>Warm Ivory · Soft Gold · Cormorant Garamond</span>
+  </div>
+</div>
+</footer>
+<script src="../assets/js/site.js"></script>
+<script>
+(function(){
+  "use strict";
+
+  var INDEX = [
+    { title:"Inicio", url:"index.html", excerpt:"Mensajes de Dios al Corazón — un devocional de Lyanette Valiente para caminar cada día con esperanza, paz y la presencia de Dios." },
+    { title:"El libro", url:"book.html", excerpt:"Mensajes de Dios al Corazón — cuarenta reflexiones escritas en la voz original de Lyanette Valiente, en digital, tapa blanda y Kindle." },
+    { title:"Tienda", url:"store.html", excerpt:"Compra la edición digital, el paquete bilingüe, o encuentra los enlaces a tapa blanda y Kindle en Amazon." },
+    { title:"Carrito", url:"cart.html", excerpt:"Revisa los artículos en tu carrito, aplica un cupón y continúa hacia el pago." },
+    { title:"Lector de muestra", url:"reader.html", excerpt:"Lee capítulos de muestra en línea, con navegación por capítulos, modo oscuro y control de tamaño de letra." },
+    { title:"Autora", url:"author.html", excerpt:"Conoce la historia de Lyanette Valiente, escritora y maestra devocional." },
+    { title:"Blog", url:"blog.html", excerpt:"Reflexiones breves y devocionales publicadas cada semana." },
+    { title:"Una oración para el cansancio", url:"blog-post-1.html", excerpt:"Una reflexión devocional sobre descansar en Dios cuando el cuerpo y el alma están agotados." },
+    { title:"Gracia para hoy", url:"blog-post-2.html", excerpt:"Una palabra de aliento sobre recibir la gracia de Dios en medio de los días difíciles." },
+    { title:"Lo que la Escritura dice del descanso", url:"blog-post-3.html", excerpt:"Un recorrido por pasajes bíblicos sobre el descanso verdadero y la paz que solo Dios puede dar." },
+    { title:"Devocionales", url:"devotionals.html", excerpt:"Reflexiones diarias breves para acompañarte con esperanza y paz en cada temporada." },
+    { title:"Contacto", url:"contact.html", excerpt:"Suscríbete al boletín, envía una petición de oración o escríbenos con tus preguntas." },
+    { title:"Preguntas frecuentes", url:"faq.html", excerpt:"Respuestas sobre compras, formatos digitales, envíos por Amazon y tu cuenta." },
+    { title:"Privacidad", url:"privacy.html", excerpt:"Qué información recopilamos, cómo la usamos y tus derechos de privacidad." },
+    { title:"Términos", url:"terms.html", excerpt:"Términos de uso y de venta, licencia de contenido digital y política de reembolsos." },
+    { title:"Cookies", url:"cookies.html", excerpt:"Cómo usamos las cookies en este sitio y cómo puedes administrar tus preferencias." },
+    { title:"Mi cuenta", url:"account.html", excerpt:"Consulta tus datos, tus pedidos y tus preferencias de lectura." },
+    { title:"Descargas", url:"download.html", excerpt:"Vuelve a descargar los archivos EPUB y PDF de tus compras digitales." },
+    { title:"Peticiones de oración", url:"prayer-requests.html", excerpt:"Comparte lo que llevas en el corazón — cada petición se lee con cuidado y se lleva en oración." },
+    { title:"Boletín", url:"newsletter.html", excerpt:"Suscríbete y recibe una reflexión breve cada semana directamente en tu correo." }
+  ];
+
+  var input = document.getElementById("search-input");
+  var results = document.getElementById("search-results");
+  var empty = document.getElementById("search-empty");
+  var status = document.getElementById("search-status");
+
+  function normalize(s){
+    return (s || "").toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, "");
+  }
+
+  function render(list, query){
+    results.innerHTML = "";
+    if(!query){
+      empty.style.display = "none";
+      status.textContent = "";
+      return;
+    }
+    if(list.length === 0){
+      empty.style.display = "block";
+      status.textContent = "";
+      return;
+    }
+    empty.style.display = "none";
+    status.textContent = list.length === 1
+      ? "1 resultado para “" + query + "”"
+      : list.length + " resultados para “" + query + "”";
+    list.forEach(function(item){
+      var card = document.createElement("a");
+      card.className = "card";
+      card.href = item.url;
+      card.setAttribute("data-od-id", "search-result-" + item.url.replace(/\.html$/, ""));
+      card.style.display = "block";
+      card.style.textDecoration = "none";
+      card.innerHTML =
+        '<strong style="color:var(--fg);font-family:var(--font-display);font-size:20px;">' + item.title + '</strong>' +
+        '<p class="muted" style="margin:6px 0 0;">' + item.excerpt + '</p>' +
+        '<span class="muted" style="font-size:12px;">' + item.url + '</span>';
+      results.appendChild(card);
+    });
+  }
+
+  function runSearch(query){
+    var q = normalize(query.trim());
+    if(!q){ render([], ""); return; }
+    var matches = INDEX.filter(function(item){
+      return normalize(item.title).indexOf(q) !== -1 || normalize(item.excerpt).indexOf(q) !== -1;
+    });
+    render(matches, query.trim());
+  }
+
+  input.addEventListener("input", function(){ runSearch(input.value); });
+
+  var params = new URLSearchParams(window.location.search);
+  var initial = params.get("q") || "";
+  if(initial){
+    input.value = initial;
+    runSearch(initial);
+  }
+})();
+</script>
+</body>
+</html>

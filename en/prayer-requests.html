@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Prayer Requests — Messages from God to the Heart</title>
+<meta name="description" content="Share your prayer request with Lyanette Valiente and her team. Every request is read with care, kept private, and carried in prayer.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,500&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/styles.css">
+<link rel="icon" href="../assets/logo/favicon.svg" type="image/svg+xml">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header" id="site-header" data-od-id="site-header">
+<div class="container header-row">
+  <a class="wordmark" href="index.html">Lyanette Valiente<small>Messages from God to the Heart</small></a>
+  <nav class="main-nav" aria-label="Primary"><ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="book.html">The Book</a></li>
+    <li><a href="store.html">Store</a></li>
+    <li><a href="reader.html">Reader</a></li>
+    <li><a href="author.html">Author</a></li>
+    <li><a href="blog.html">Blog</a></li>
+    <li><a href="devotionals.html">Devotionals</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul></nav>
+  <div class="header-tools">
+    <div class="lang-toggle" role="group" aria-label="Idioma / Language">
+      <a href="../es/prayer-requests.html">ES</a>
+      <a href="prayer-requests.html" class="active" aria-current="true">EN</a>
+    </div>
+    <a class="icon-btn" href="search.html" aria-label="Search">
+      <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
+    </a>
+    <a class="icon-btn" href="cart.html" aria-label="Cart">
+      <svg viewBox="0 0 24 24"><path d="M4 6h2l1.6 10.2A2 2 0 0 0 9.6 18h7.8a2 2 0 0 0 2-1.6L21 9H7"/><circle cx="10" cy="21" r="1"/><circle cx="18" cy="21" r="1"/></svg>
+      <span class="cart-badge" id="cart-badge" data-count="0">0</span>
+    </a>
+    <button type="button" class="icon-btn menu-toggle" id="menu-toggle" aria-label="Menu" aria-expanded="false">
+      <svg viewBox="0 0 24 24"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+    </button>
+  </div>
+</div>
+<nav class="mobile-nav" id="mobile-nav" aria-label="Mobile"><ul>
+  <li><a href="index.html">Home</a></li>
+  <li><a href="book.html">The Book</a></li>
+  <li><a href="store.html">Store</a></li>
+  <li><a href="reader.html">Reader</a></li>
+  <li><a href="author.html">Author</a></li>
+  <li><a href="blog.html">Blog</a></li>
+  <li><a href="devotionals.html">Devotionals</a></li>
+  <li><a href="contact.html">Contact</a></li>
+  <li><a href="cart.html">Cart</a></li>
+  <li><a href="account.html">My Account</a></li>
+</ul></nav>
+</header>
+
+<main id="main">
+
+  <!-- HERO -->
+  <section class="grain" data-od-id="prayer-hero" style="padding-top:var(--space-6);">
+    <div class="container center">
+      <span class="eyebrow" style="justify-content:center;">Prayer Requests</span>
+      <h1 style="margin:var(--space-2) auto;max-width:30ch;">Leave here what your heart is carrying</h1>
+      <p class="lede muted" style="max-width:56ch;margin:0 auto;">One of the convictions that holds this whole devotional together is that grace meets you where you are — not where you think you should be. You don't need elegant words or a perfect faith to ask for prayer. You only need to be honest.</p>
+    </div>
+  </section>
+
+  <!-- FORM -->
+  <section data-od-id="prayer-form-section">
+    <div class="container">
+      <div class="card card-surface" style="max-width:640px;margin:0 auto;" data-od-id="prayer-form-card">
+        <span class="eyebrow">Your request</span>
+        <h2 style="margin-bottom:var(--space-2);">Tell us what you need today</h2>
+        <form id="prayer-request-form" data-od-id="prayer-request-form">
+          <div class="field-row" style="margin-bottom:var(--space-2);">
+            <label class="muted" style="font-size:13px;font-weight:600;" for="pr-name">Name (optional)</label>
+            <input class="field" id="pr-name" type="text" placeholder="Your name">
+          </div>
+          <div class="field-row" style="margin-bottom:var(--space-2);">
+            <label class="muted" style="font-size:13px;font-weight:600;" for="pr-request">Your prayer request</label>
+            <textarea class="field" id="pr-request" required placeholder="Write what's on your heart…"></textarea>
+          </div>
+          <div style="display:flex;align-items:flex-start;gap:8px;margin-bottom:var(--space-3);">
+            <input type="checkbox" id="pr-anonymous" style="margin-top:4px;">
+            <label class="muted" style="font-size:13px;" for="pr-anonymous">You may share this request anonymously in our prayer circle.</label>
+          </div>
+          <button class="btn btn-primary btn-block" type="submit" data-od-id="prayer-request-submit">Send request</button>
+          <p class="form-msg ok" id="prayer-request-msg" style="display:none;margin-top:var(--space-2);"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW REQUESTS ARE HANDLED -->
+  <section class="band" data-od-id="prayer-handling">
+    <div class="container" style="max-width:680px;">
+      <span class="eyebrow">How we care for your request</span>
+      <h2 style="margin-bottom:var(--space-3);">With honesty, not empty promises</h2>
+      <ul class="hairline-list">
+        <li><strong>It's read with care.</strong> Every request you send is read by Lyanette or someone on her direct team — slowly, unhurried, the way you'd read a letter from a friend.</li>
+        <li><strong>It stays private.</strong> Your request is never published on the site or shared outside this team, unless you check the box to share it anonymously in our prayer circle.</li>
+        <li><strong>It isn't a promise of a personal reply.</strong> Because of the volume of messages, we can't always respond to you individually. But every name, every word written here, is carried in prayer — of that you can be certain.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- CLOSING CTA -->
+  <section data-od-id="prayer-cta">
+    <div class="container center">
+      <span class="eyebrow" style="justify-content:center;">Keep walking in community</span>
+      <h2 style="margin:var(--space-2) auto;max-width:28ch;">Receive encouragement each week in your inbox</h2>
+      <p class="muted" style="max-width:46ch;margin:0 auto var(--space-3);">If this request is part of a hard season, our weekly newsletter can be a steady reminder that you don't walk alone.</p>
+      <a class="btn btn-outline" href="newsletter.html" data-od-id="prayer-cta-newsletter">Subscribe to the newsletter</a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer" id="site-footer" data-od-id="site-footer">
+<div class="container">
+  <div class="footer-grid">
+    <div>
+      <div class="footer-word"><svg class="sprig" viewBox="0 0 40 16" aria-hidden="true"><path d="M1 8c8-8 16-8 20-8s10 0 18 8c-8 8-14 8-18 8S9 16 1 8Z" fill="none" stroke="currentColor" stroke-width="1"/><path d="M20 0v16M8 4c2 2 3 4 3 4s-1 2-3 4M32 4c-2 2-3 4-3 4s1 2 3 4" stroke="currentColor" stroke-width=".8" fill="none"/></svg></div>
+      <p class="muted" style="color:rgba(var(--bg-rgb),.7);max-width:32ch;font-size:14px;">Messages from God to the Heart — a devotional by Lyanette Valiente for walking each day with hope.</p>
+    </div>
+    <div><h5>Explore</h5><ul>
+      <li><a href="book.html">The Book</a></li>
+      <li><a href="author.html">Author</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="devotionals.html">Devotionals</a></li>
+      <li><a href="reader.html">Reader</a></li>
+    </ul></div>
+    <div><h5>Store</h5><ul>
+      <li><a href="store.html">Digital store</a></li>
+      <li><a href="cart.html">Cart</a></li>
+      <li><a href="account.html">My account</a></li>
+      <li><a href="search.html">Search</a></li>
+    </ul></div>
+    <div><h5>Community</h5><ul>
+      <li><a href="prayer-requests.html">Prayer requests</a></li>
+      <li><a href="newsletter.html">Newsletter</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul></div>
+    <div><h5>Help</h5><ul>
+      <li><a href="faq.html">FAQ</a></li>
+      <li><a href="privacy.html">Privacy</a></li>
+      <li><a href="terms.html">Terms</a></li>
+      <li><a href="cookies.html">Cookie policy</a></li>
+    </ul></div>
+  </div>
+  <div class="footer-bottom">
+    <span>&copy; 2026 Lyanette Valiente. All rights reserved.</span>
+    <span>Warm Ivory · Soft Gold · Cormorant Garamond</span>
+  </div>
+</div>
+</footer>
+<script src="../assets/js/site.js"></script>
+<script>
+  document.getElementById("prayer-request-form").addEventListener("submit", function(e){
+    e.preventDefault();
+    var msg = document.getElementById("prayer-request-msg");
+    msg.style.display = "block";
+    msg.textContent = "Thank you for trusting us — your request has been received and will be held in prayer.";
+    e.target.reset();
+  });
+</script>
+</body>
+</html>

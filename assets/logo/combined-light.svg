@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 620 160" width="620" height="160">
+  <circle cx="80" cy="80" r="58" fill="none" stroke="#2a2520" stroke-width="1.5"/>
+  <text x="80" y="102" text-anchor="middle" font-family="'Cormorant Garamond', 'Iowan Old Style', Georgia, serif" font-size="62" font-weight="600" fill="#2a2520">LV</text>
+  <line x1="164" y1="40" x2="164" y2="120" stroke="#e1d5b8" stroke-width="1"/>
+  <text x="192" y="76" font-family="'Cormorant Garamond', 'Iowan Old Style', Georgia, serif" font-size="42" font-weight="600" letter-spacing="-0.5" fill="#2a2520">Lyanette Valiente</text>
+  <text x="192" y="102" font-family="'Source Sans 3', Arial, sans-serif" font-size="12" font-weight="600" letter-spacing="2" fill="#8b9a82">MENSAJES DE DIOS DEL CORAZÓN</text>
+</svg>

@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mi cuenta — Mensajes de Dios al Corazón</title>
+<meta name="description" content="Revisa tu historial de compras de Mensajes de Dios al Corazón en este dispositivo y tus datos de contacto.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,500&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/styles.css">
+<link rel="icon" href="../assets/logo/favicon.svg" type="image/svg+xml">
+</head>
+<body>
+<a class="skip-link" href="#main">Saltar al contenido</a>
+<header class="site-header" id="site-header" data-od-id="site-header">
+<div class="container header-row">
+  <a class="wordmark" href="index.html">Lyanette Valiente<small>Mensajes de Dios al Corazón</small></a>
+  <nav class="main-nav" aria-label="Principal"><ul>
+    <li><a href="index.html">Inicio</a></li>
+    <li><a href="book.html">El libro</a></li>
+    <li><a href="store.html">Tienda</a></li>
+    <li><a href="reader.html">Lector</a></li>
+    <li><a href="author.html">Autora</a></li>
+    <li><a href="blog.html">Blog</a></li>
+    <li><a href="devotionals.html">Devocionales</a></li>
+    <li><a href="contact.html">Contacto</a></li>
+  </ul></nav>
+  <div class="header-tools">
+    <div class="lang-toggle" role="group" aria-label="Idioma / Language">
+      <a href="account.html" class="active" aria-current="true">ES</a>
+      <a href="../en/account.html">EN</a>
+    </div>
+    <a class="icon-btn" href="search.html" aria-label="Buscar">
+      <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
+    </a>
+    <a class="icon-btn" href="cart.html" aria-label="Carrito">
+      <svg viewBox="0 0 24 24"><path d="M4 6h2l1.6 10.2A2 2 0 0 0 9.6 18h7.8a2 2 0 0 0 2-1.6L21 9H7"/><circle cx="10" cy="21" r="1"/><circle cx="18" cy="21" r="1"/></svg>
+      <span class="cart-badge" id="cart-badge" data-count="0">0</span>
+    </a>
+    <button type="button" class="icon-btn menu-toggle" id="menu-toggle" aria-label="Menú" aria-expanded="false">
+      <svg viewBox="0 0 24 24"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+    </button>
+  </div>
+</div>
+<nav class="mobile-nav" id="mobile-nav" aria-label="Mobile"><ul>
+  <li><a href="index.html">Inicio</a></li>
+  <li><a href="book.html">El libro</a></li>
+  <li><a href="store.html">Tienda</a></li>
+  <li><a href="reader.html">Lector</a></li>
+  <li><a href="author.html">Autora</a></li>
+  <li><a href="blog.html">Blog</a></li>
+  <li><a href="devotionals.html">Devocionales</a></li>
+  <li><a href="contact.html">Contacto</a></li>
+  <li><a href="cart.html">Carrito</a></li>
+  <li><a href="account.html">Mi cuenta</a></li>
+</ul></nav>
+</header>
+
+<main id="main">
+
+  <section class="section-tight" data-od-id="account-header">
+    <div class="container">
+      <span class="eyebrow">Mi cuenta</span>
+      <h1 style="margin-top:var(--space-2);">Historial de compras en este dispositivo</h1>
+      <p class="lede muted" style="max-width:56ch;">Aquí verás los pedidos realizados desde este navegador. No usamos contraseñas — tu historial vive en este dispositivo, así que si compraste desde otro, revisa tu correo o usa la búsqueda de pedidos en Mis descargas.</p>
+    </div>
+  </section>
+
+  <section class="section-tight" data-od-id="account-body" style="padding-top:0;">
+    <div class="container" style="display:grid;grid-template-columns:1.5fr 1fr;gap:var(--space-5);align-items:start;">
+
+      <div>
+        <h3>Pedidos anteriores</h3>
+
+        <div id="orders-list" data-od-id="orders-list"></div>
+
+        <div id="orders-empty" data-od-id="orders-empty" style="display:none;text-align:center;padding:var(--space-5) 0;">
+          <p class="muted" style="max-width:44ch;margin:0 auto var(--space-3);">Todavía no hay compras registradas en este dispositivo.</p>
+          <a class="btn btn-primary" href="store.html" data-od-id="orders-empty-cta">Ir a la tienda</a>
+        </div>
+      </div>
+
+      <div>
+        <div class="card card-surface" style="margin-bottom:var(--space-3);" data-od-id="account-details">
+          <h4 style="margin-bottom:var(--space-2);">Datos de contacto</h4>
+          <p class="muted" style="font-size:13px;margin-bottom:var(--space-2);">Solo se guardan en este navegador — útil para tus próximas compras.</p>
+          <div class="field-row">
+            <div>
+              <label class="field-label" for="acc-name">Nombre</label>
+              <input class="field" id="acc-name" type="text" placeholder="Tu nombre">
+            </div>
+            <div>
+              <label class="field-label" for="acc-email">Correo electrónico</label>
+              <input class="field" id="acc-email" type="email" placeholder="tu@correo.com">
+            </div>
+          </div>
+          <button class="btn btn-outline btn-block" type="button" id="acc-save" style="margin-top:var(--space-2);" data-od-id="account-save">Guardar</button>
+          <p class="form-msg ok" id="acc-save-msg" style="display:none;margin-top:var(--space-2);"></p>
+        </div>
+
+        <div class="card" data-od-id="account-coupon">
+          <h4 style="margin-bottom:6px;">Último cupón usado</h4>
+          <p class="muted" id="last-coupon-line" style="font-size:14px;margin-bottom:0;">—</p>
+        </div>
+
+        <a class="btn btn-primary btn-block" href="download.html" style="margin-top:var(--space-3);" data-od-id="account-go-downloads">Ir a mis descargas</a>
+      </div>
+
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer" id="site-footer" data-od-id="site-footer">
+<div class="container">
+  <div class="footer-grid">
+    <div>
+      <div class="footer-word"><svg class="sprig" viewBox="0 0 40 16" aria-hidden="true"><path d="M1 8c8-8 16-8 20-8s10 0 18 8c-8 8-14 8-18 8S9 16 1 8Z" fill="none" stroke="currentColor" stroke-width="1"/><path d="M20 0v16M8 4c2 2 3 4 3 4s-1 2-3 4M32 4c-2 2-3 4-3 4s1 2 3 4" stroke="currentColor" stroke-width=".8" fill="none"/></svg></div>
+      <p class="muted" style="color:rgba(var(--bg-rgb),.7);max-width:32ch;font-size:14px;">Mensajes de Dios al Corazón — un devocional de Lyanette Valiente para caminar cada día con esperanza.</p>
+    </div>
+    <div><h5>Explorar</h5><ul>
+      <li><a href="book.html">El libro</a></li>
+      <li><a href="author.html">Autora</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="devotionals.html">Devocionales</a></li>
+      <li><a href="reader.html">Lector</a></li>
+    </ul></div>
+    <div><h5>Tienda</h5><ul>
+      <li><a href="store.html">Tienda digital</a></li>
+      <li><a href="cart.html">Carrito</a></li>
+      <li><a href="account.html">Mi cuenta</a></li>
+      <li><a href="search.html">Buscar</a></li>
+    </ul></div>
+    <div><h5>Comunidad</h5><ul>
+      <li><a href="prayer-requests.html">Peticiones de oración</a></li>
+      <li><a href="newsletter.html">Boletín</a></li>
+      <li><a href="contact.html">Contacto</a></li>
+    </ul></div>
+    <div><h5>Ayuda</h5><ul>
+      <li><a href="faq.html">Preguntas frecuentes</a></li>
+      <li><a href="privacy.html">Privacidad</a></li>
+      <li><a href="terms.html">Términos</a></li>
+      <li><a href="cookies.html">Cookies</a></li>
+    </ul></div>
+  </div>
+  <div class="footer-bottom">
+    <span>&copy; 2026 Lyanette Valiente. Todos los derechos reservados.</span>
+    <span>Warm Ivory · Soft Gold · Cormorant Garamond</span>
+  </div>
+</div>
+</footer>
+
+<script src="../assets/js/site.js"></script>
+<script>
+(function(){
+  "use strict";
+
+  function getOrders(){
+    try{ return JSON.parse(localStorage.getItem("mdc-orders")) || []; }catch(e){ return []; }
+  }
+
+  function fmtDate(iso){
+    try{
+      var d = new Date(iso);
+      return d.toLocaleDateString("es-ES", { year:"numeric", month:"long", day:"numeric" });
+    }catch(e){ return iso; }
+  }
+
+  function orderCard(order){
+    var itemsLine = (order.items || []).map(function(i){ return i.title + ' (x' + i.qty + ')'; }).join(", ");
+    return ''+
+    '<div class="card" style="margin-bottom:var(--space-2);" data-od-id="order-'+order.id+'">'+
+      '<div style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;margin-bottom:6px;">'+
+        '<strong>'+order.id+'</strong>'+
+        '<span class="muted" style="font-size:13px;">'+fmtDate(order.date)+'</span>'+
+      '</div>'+
+      '<p class="muted" style="font-size:14px;margin-bottom:6px;">'+itemsLine+'</p>'+
+      '<div style="display:flex;justify-content:space-between;align-items:center;">'+
+        '<span class="price" style="font-size:18px;">'+MDC.fmtUSD(order.total)+'</span>'+
+        '<a class="btn btn-ghost btn-sm" href="download.html" data-od-id="order-downloads-'+order.id+'">Ver descargas →</a>'+
+      '</div>'+
+    '</div>';
+  }
+
+  function render(){
+    var orders = getOrders().slice().reverse();
+    var list = document.getElementById("orders-list");
+    var empty = document.getElementById("orders-empty");
+
+    if(orders.length === 0){
+      list.style.display = "none";
+      empty.style.display = "block";
+    } else {
+      empty.style.display = "none";
+      list.style.display = "block";
+      list.innerHTML = orders.map(orderCard).join("");
+    }
+
+    var coupon = sessionStorage.getItem("mdc-cart-coupon") || localStorage.getItem("mdc-last-coupon");
+    var line = document.getElementById("last-coupon-line");
+    if(coupon){
+      var pct = MDC.applyCoupon(coupon);
+      line.textContent = coupon.toUpperCase() + (pct > 0 ? " · " + Math.round(pct*100) + "% de descuento" : "");
+    } else {
+      line.textContent = "Aún no has usado ningún cupón.";
+    }
+
+    var savedName = localStorage.getItem("mdc-account-name");
+    var savedEmail = localStorage.getItem("mdc-account-email");
+    if(savedName) document.getElementById("acc-name").value = savedName;
+    if(savedEmail) document.getElementById("acc-email").value = savedEmail;
+  }
+
+  document.getElementById("acc-save").addEventListener("click", function(){
+    localStorage.setItem("mdc-account-name", document.getElementById("acc-name").value.trim());
+    localStorage.setItem("mdc-account-email", document.getElementById("acc-email").value.trim());
+    var msg = document.getElementById("acc-save-msg");
+    msg.style.display = "block";
+    msg.textContent = "Datos guardados en este dispositivo.";
+    setTimeout(function(){ msg.style.display = "none"; }, 2200);
+  });
+
+  document.addEventListener("DOMContentLoaded", render);
+  render();
+})();
+</script>
+</body>
+</html>

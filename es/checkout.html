@@ -1,0 +1,273 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pago — Mensajes de Dios al Corazón</title>
+<meta name="description" content="Completa tus datos de facturación y pago para recibir al instante tu edición digital de Mensajes de Dios al Corazón.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,500&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/styles.css">
+<link rel="icon" href="../assets/logo/favicon.svg" type="image/svg+xml">
+</head>
+<body>
+<a class="skip-link" href="#main">Saltar al contenido</a>
+<header class="site-header" id="site-header" data-od-id="site-header">
+<div class="container header-row">
+  <a class="wordmark" href="index.html">Lyanette Valiente<small>Mensajes de Dios al Corazón</small></a>
+  <nav class="main-nav" aria-label="Principal"><ul>
+    <li><a href="index.html">Inicio</a></li>
+    <li><a href="book.html">El libro</a></li>
+    <li><a href="store.html">Tienda</a></li>
+    <li><a href="reader.html">Lector</a></li>
+    <li><a href="author.html">Autora</a></li>
+    <li><a href="blog.html">Blog</a></li>
+    <li><a href="devotionals.html">Devocionales</a></li>
+    <li><a href="contact.html">Contacto</a></li>
+  </ul></nav>
+  <div class="header-tools">
+    <div class="lang-toggle" role="group" aria-label="Idioma / Language">
+      <a href="checkout.html" class="active" aria-current="true">ES</a>
+      <a href="../en/checkout.html">EN</a>
+    </div>
+    <a class="icon-btn" href="search.html" aria-label="Buscar">
+      <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
+    </a>
+    <a class="icon-btn" href="cart.html" aria-label="Carrito">
+      <svg viewBox="0 0 24 24"><path d="M4 6h2l1.6 10.2A2 2 0 0 0 9.6 18h7.8a2 2 0 0 0 2-1.6L21 9H7"/><circle cx="10" cy="21" r="1"/><circle cx="18" cy="21" r="1"/></svg>
+      <span class="cart-badge" id="cart-badge" data-count="0">0</span>
+    </a>
+    <button type="button" class="icon-btn menu-toggle" id="menu-toggle" aria-label="Menú" aria-expanded="false">
+      <svg viewBox="0 0 24 24"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+    </button>
+  </div>
+</div>
+<nav class="mobile-nav" id="mobile-nav" aria-label="Mobile"><ul>
+  <li><a href="index.html">Inicio</a></li>
+  <li><a href="book.html">El libro</a></li>
+  <li><a href="store.html">Tienda</a></li>
+  <li><a href="reader.html">Lector</a></li>
+  <li><a href="author.html">Autora</a></li>
+  <li><a href="blog.html">Blog</a></li>
+  <li><a href="devotionals.html">Devocionales</a></li>
+  <li><a href="contact.html">Contacto</a></li>
+  <li><a href="cart.html">Carrito</a></li>
+  <li><a href="account.html">Mi cuenta</a></li>
+</ul></nav>
+</header>
+
+<main id="main">
+
+  <section class="section-tight" data-od-id="checkout-section">
+    <div class="container">
+
+      <h1 class="sr-only">Pago — Mensajes de Dios al Corazón</h1>
+      <div class="step-track" data-od-id="checkout-steps">
+        <div class="step done"><span class="dot"><svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 12l5 5L20 6"/></svg></span><span>Carrito</span></div>
+        <div class="sep"></div>
+        <div class="step active"><span class="dot">2</span><span>Datos</span></div>
+        <div class="sep"></div>
+        <div class="step"><span class="dot">3</span><span>Pago</span></div>
+        <div class="sep"></div>
+        <div class="step"><span class="dot">4</span><span>Confirmación</span></div>
+      </div>
+
+      <div id="checkout-empty" data-od-id="checkout-empty" style="display:none;text-align:center;padding:var(--space-6) 0;">
+        <p class="lede muted" style="max-width:44ch;margin:0 auto var(--space-3);">Tu carrito está vacío, así que no hay nada que pagar todavía.</p>
+        <a class="btn btn-primary" href="store.html" data-od-id="checkout-empty-cta">Ir a la tienda</a>
+      </div>
+
+      <div id="checkout-filled" data-od-id="checkout-filled" style="display:none;grid-template-columns:1.5fr 1fr;gap:var(--space-5);align-items:start;">
+        <form id="checkout-form" data-od-id="checkout-form">
+
+          <h3>Datos de facturación</h3>
+          <p class="muted" data-od-id="checkout-guest-note" style="font-size:14px;margin:-4px 0 var(--space-2);">Estás comprando como invitado — no necesitas una cuenta.</p>
+          <div class="field-row" style="margin-bottom:var(--space-2);">
+            <div>
+              <label class="field-label" for="ck-name">Nombre completo</label>
+              <input class="field" id="ck-name" name="name" type="text" required autocomplete="name" placeholder="Tu nombre completo">
+            </div>
+          </div>
+          <div class="field-row-2" style="margin-bottom:var(--space-4);">
+            <div>
+              <label class="field-label" for="ck-email">Correo electrónico</label>
+              <input class="field" id="ck-email" name="email" type="email" required autocomplete="email" placeholder="tu@correo.com">
+            </div>
+            <div>
+              <label class="field-label" for="ck-country">País</label>
+              <input class="field" id="ck-country" name="country" type="text" required autocomplete="country-name" placeholder="Tu país">
+            </div>
+          </div>
+
+          <h3>Datos de pago</h3>
+          <div class="field-row" style="margin-bottom:var(--space-2);">
+            <div>
+              <label class="field-label" for="ck-card">Número de tarjeta</label>
+              <input class="field" id="ck-card" name="card" type="text" required inputmode="numeric" maxlength="19" placeholder="0000 0000 0000 0000">
+            </div>
+          </div>
+          <div class="field-row-2" style="margin-bottom:var(--space-4);">
+            <div>
+              <label class="field-label" for="ck-expiry">Vencimiento</label>
+              <input class="field" id="ck-expiry" name="expiry" type="text" required placeholder="MM / AA">
+            </div>
+            <div>
+              <label class="field-label" for="ck-cvc">CVC</label>
+              <input class="field" id="ck-cvc" name="cvc" type="text" required inputmode="numeric" maxlength="4" placeholder="123">
+            </div>
+          </div>
+
+          <label for="ck-save-contact" data-od-id="checkout-save-contact-label" style="display:flex;align-items:flex-start;gap:8px;font-size:14px;color:var(--muted);margin-bottom:var(--space-3);cursor:pointer;">
+            <input type="checkbox" id="ck-save-contact" name="save-contact" data-od-id="checkout-save-contact" style="margin-top:3px;">
+            <span>Guardar mis datos de contacto en este dispositivo para la próxima vez.</span>
+          </label>
+
+          <button class="btn btn-gold btn-block" type="submit" id="checkout-submit" data-od-id="checkout-submit">Confirmar y pagar</button>
+          <p class="form-msg error" id="checkout-error" style="display:none;margin-top:var(--space-2);"></p>
+        </form>
+
+        <aside class="card card-surface" data-od-id="checkout-summary" style="position:sticky;top:100px;">
+          <h4 style="margin-bottom:var(--space-2);">Tu pedido</h4>
+          <div id="checkout-lines" data-od-id="checkout-lines" class="hairline-list"></div>
+          <div class="summary-row" style="margin-top:var(--space-2);"><span>Subtotal</span><span id="ck-sum-subtotal">$0.00</span></div>
+          <div class="summary-row" id="ck-sum-discount-row" style="display:none;"><span id="ck-sum-discount-label">Descuento</span><span id="ck-sum-discount">−$0.00</span></div>
+          <div class="summary-row total"><span>Total</span><span id="ck-sum-total">$0.00</span></div>
+        </aside>
+      </div>
+
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer" id="site-footer" data-od-id="site-footer">
+<div class="container">
+  <div class="footer-grid">
+    <div>
+      <div class="footer-word"><svg class="sprig" viewBox="0 0 40 16" aria-hidden="true"><path d="M1 8c8-8 16-8 20-8s10 0 18 8c-8 8-14 8-18 8S9 16 1 8Z" fill="none" stroke="currentColor" stroke-width="1"/><path d="M20 0v16M8 4c2 2 3 4 3 4s-1 2-3 4M32 4c-2 2-3 4-3 4s1 2 3 4" stroke="currentColor" stroke-width=".8" fill="none"/></svg></div>
+      <p class="muted" style="color:rgba(var(--bg-rgb),.7);max-width:32ch;font-size:14px;">Mensajes de Dios al Corazón — un devocional de Lyanette Valiente para caminar cada día con esperanza.</p>
+    </div>
+    <div><h5>Explorar</h5><ul>
+      <li><a href="book.html">El libro</a></li>
+      <li><a href="author.html">Autora</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="devotionals.html">Devocionales</a></li>
+      <li><a href="reader.html">Lector</a></li>
+    </ul></div>
+    <div><h5>Tienda</h5><ul>
+      <li><a href="store.html">Tienda digital</a></li>
+      <li><a href="cart.html">Carrito</a></li>
+      <li><a href="account.html">Mi cuenta</a></li>
+      <li><a href="search.html">Buscar</a></li>
+    </ul></div>
+    <div><h5>Comunidad</h5><ul>
+      <li><a href="prayer-requests.html">Peticiones de oración</a></li>
+      <li><a href="newsletter.html">Boletín</a></li>
+      <li><a href="contact.html">Contacto</a></li>
+    </ul></div>
+    <div><h5>Ayuda</h5><ul>
+      <li><a href="faq.html">Preguntas frecuentes</a></li>
+      <li><a href="privacy.html">Privacidad</a></li>
+      <li><a href="terms.html">Términos</a></li>
+      <li><a href="cookies.html">Cookies</a></li>
+    </ul></div>
+  </div>
+  <div class="footer-bottom">
+    <span>&copy; 2026 Lyanette Valiente. Todos los derechos reservados.</span>
+    <span>Warm Ivory · Soft Gold · Cormorant Garamond</span>
+  </div>
+</div>
+</footer>
+
+<script src="../assets/js/site.js"></script>
+<script>
+(function(){
+  "use strict";
+  var couponCode = sessionStorage.getItem("mdc-cart-coupon") || "";
+
+  function renderSummary(){
+    var cart = MDC.getCart();
+    var empty = document.getElementById("checkout-empty");
+    var filled = document.getElementById("checkout-filled");
+
+    if(cart.length === 0){
+      empty.style.display = "block";
+      filled.style.display = "none";
+      return false;
+    }
+    empty.style.display = "none";
+    filled.style.display = "grid";
+
+    document.getElementById("checkout-lines").innerHTML = cart.map(function(item){
+      return '<div style="display:flex;justify-content:space-between;gap:10px;padding:10px 0;border-bottom:1px solid var(--border);">'+
+        '<div><strong style="display:block;font-size:14px;">'+item.title+'</strong>'+
+        '<span class="muted" style="font-size:12px;">'+item.edition+' · '+item.format+' · x'+item.qty+'</span></div>'+
+        '<span style="font-size:14px;white-space:nowrap;">'+MDC.fmtUSD(item.price*item.qty)+'</span>'+
+      '</div>';
+    }).join("");
+
+    var subtotal = MDC.cartSubtotal(cart);
+    var discountPct = MDC.applyCoupon(couponCode);
+    var discount = subtotal * discountPct;
+    var total = subtotal - discount;
+
+    document.getElementById("ck-sum-subtotal").textContent = MDC.fmtUSD(subtotal);
+    var discRow = document.getElementById("ck-sum-discount-row");
+    if(discountPct > 0){
+      discRow.style.display = "flex";
+      document.getElementById("ck-sum-discount-label").textContent = "Descuento (" + couponCode.toUpperCase() + ")";
+      document.getElementById("ck-sum-discount").textContent = "−" + MDC.fmtUSD(discount);
+    } else {
+      discRow.style.display = "none";
+    }
+    document.getElementById("ck-sum-total").textContent = MDC.fmtUSD(total);
+    return true;
+  }
+
+  renderSummary();
+  document.addEventListener("DOMContentLoaded", renderSummary);
+
+  document.getElementById("checkout-form").addEventListener("submit", function(e){
+    e.preventDefault();
+    var cart = MDC.getCart();
+    if(cart.length === 0) return;
+
+    var errorEl = document.getElementById("checkout-error");
+    errorEl.style.display = "none";
+
+    var subtotal = MDC.cartSubtotal(cart);
+    var discountPct = MDC.applyCoupon(couponCode);
+    var total = subtotal - (subtotal * discountPct);
+
+    var order = {
+      id: "MDC-" + Date.now().toString(36).toUpperCase(),
+      date: new Date().toISOString(),
+      items: cart,
+      total: total,
+      email: document.getElementById("ck-email").value.trim()
+    };
+
+    localStorage.setItem("mdc-last-order", JSON.stringify(order));
+
+    var saveContact = document.getElementById("ck-save-contact");
+    if(saveContact && saveContact.checked){
+      localStorage.setItem("mdc-account-name", document.getElementById("ck-name").value.trim());
+      localStorage.setItem("mdc-account-email", document.getElementById("ck-email").value.trim());
+    }
+
+    var existing = [];
+    try{ existing = JSON.parse(localStorage.getItem("mdc-orders")) || []; }catch(err){ existing = []; }
+    existing.push(order);
+    localStorage.setItem("mdc-orders", JSON.stringify(existing));
+
+    if(couponCode){ localStorage.setItem("mdc-last-coupon", couponCode); }
+    localStorage.setItem("mdc-cart", "[]");
+    sessionStorage.removeItem("mdc-cart-coupon");
+
+    window.location.href = "order-confirmation.html";
+  });
+})();
+</script>
+</body>
+</html>

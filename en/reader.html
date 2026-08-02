@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sample Reader — Messages from God to the Heart</title>
+<meta name="description" content="Read sample chapters of Messages from God to the Heart: chapter navigation, bookmarks, search, dark mode, and font-size control.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,500&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/styles.css">
+<link rel="icon" href="../assets/logo/favicon.svg" type="image/svg+xml">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header" id="site-header" data-od-id="site-header">
+<div class="container header-row">
+  <a class="wordmark" href="index.html">Lyanette Valiente<small>Messages from God to the Heart</small></a>
+  <nav class="main-nav" aria-label="Primary"><ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="book.html">The Book</a></li>
+    <li><a href="store.html">Store</a></li>
+    <li><a href="reader.html" aria-current="page">Reader</a></li>
+    <li><a href="author.html">Author</a></li>
+    <li><a href="blog.html">Blog</a></li>
+    <li><a href="devotionals.html">Devotionals</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul></nav>
+  <div class="header-tools">
+    <div class="lang-toggle" role="group" aria-label="Idioma / Language">
+      <a href="../es/reader.html">ES</a>
+      <a href="reader.html" class="active" aria-current="true">EN</a>
+    </div>
+    <a class="icon-btn" href="search.html" aria-label="Search">
+      <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
+    </a>
+    <a class="icon-btn" href="cart.html" aria-label="Cart">
+      <svg viewBox="0 0 24 24"><path d="M4 6h2l1.6 10.2A2 2 0 0 0 9.6 18h7.8a2 2 0 0 0 2-1.6L21 9H7"/><circle cx="10" cy="21" r="1"/><circle cx="18" cy="21" r="1"/></svg>
+      <span class="cart-badge" id="cart-badge" data-count="0">0</span>
+    </a>
+    <button type="button" class="icon-btn menu-toggle" id="menu-toggle" aria-label="Menu" aria-expanded="false">
+      <svg viewBox="0 0 24 24"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+    </button>
+  </div>
+</div>
+<nav class="mobile-nav" id="mobile-nav" aria-label="Mobile"><ul>
+  <li><a href="index.html">Home</a></li>
+  <li><a href="book.html">The Book</a></li>
+  <li><a href="store.html">Store</a></li>
+  <li><a href="reader.html">Reader</a></li>
+  <li><a href="author.html">Author</a></li>
+  <li><a href="blog.html">Blog</a></li>
+  <li><a href="devotionals.html">Devotionals</a></li>
+  <li><a href="contact.html">Contact</a></li>
+  <li><a href="cart.html">Cart</a></li>
+  <li><a href="account.html">My Account</a></li>
+</ul></nav>
+</header>
+
+<main id="main">
+  <h1 class="sr-only">Sample Reader — Messages from God to the Heart</h1>
+  <div class="reader-progress" data-od-id="reader-progress"><div class="reader-progress-bar" id="reader-progress-bar"></div></div>
+
+  <div class="reader-toolbar" id="reader-toolbar" data-od-id="reader-toolbar">
+    <button class="icon-btn" id="sidebar-toggle" aria-label="Chapters" style="display:none;">
+      <svg viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h10"/></svg>
+    </button>
+    <div class="lang-toggle" id="edition-toggle" role="group" aria-label="Book edition">
+      <button type="button" data-ed="es">ES</button>
+      <button type="button" data-ed="en">EN</button>
+    </div>
+    <div style="display:flex;align-items:center;gap:10px;flex-wrap:wrap;">
+      <span class="muted" id="reader-progress-label" style="font-size:12px;font-weight:700;">0%</span>
+      <div class="font-controls" aria-label="Font size">
+        <button type="button" id="font-minus" aria-label="Decrease font size">A</button>
+        <button type="button" id="font-plus" aria-label="Increase font size">A</button>
+      </div>
+      <button type="button" class="btn btn-sm btn-outline" id="dark-toggle" aria-pressed="false"></button>
+    </div>
+  </div>
+
+  <div class="reader-shell" data-od-id="reader-shell">
+    <aside class="reader-sidebar" id="reader-sidebar" data-od-id="reader-sidebar">
+      <h5>Chapters</h5>
+      <input class="field" id="reader-search" type="search" placeholder="Search chapters…" style="margin-bottom:var(--space-3);font-size:14px;padding:9px 12px;" data-od-id="reader-search">
+      <ul class="reader-toc" id="reader-toc" data-od-id="reader-toc"></ul>
+      <div class="card card-surface" style="font-size:13px;">
+        <strong style="display:block;margin-bottom:6px;">Is this message speaking to you?</strong>
+        <p class="muted" style="margin-bottom:10px;">Unlock all forty complete reflections.</p>
+        <a class="btn btn-gold btn-sm btn-block" href="store.html">See editions</a>
+      </div>
+    </aside>
+
+    <article class="reader-text" id="reader-article" data-od-id="reader-article"></article>
+  </div>
+
+  <div class="container" style="padding-bottom:var(--space-6);">
+    <div class="running-head" style="border-top:1px solid var(--border);border-bottom:0;padding-top:var(--space-3);">
+      <button class="btn btn-ghost btn-sm" id="prev-chapter">← Previous</button>
+      <button class="btn btn-ghost btn-sm" id="next-chapter">Next →</button>
+    </div>
+  </div>
+</main>
+
+<footer class="site-footer" id="site-footer" data-od-id="site-footer">
+<div class="container">
+  <div class="footer-grid">
+    <div>
+      <div class="footer-word"><svg class="sprig" viewBox="0 0 40 16" aria-hidden="true"><path d="M1 8c8-8 16-8 20-8s10 0 18 8c-8 8-14 8-18 8S9 16 1 8Z" fill="none" stroke="currentColor" stroke-width="1"/><path d="M20 0v16M8 4c2 2 3 4 3 4s-1 2-3 4M32 4c-2 2-3 4-3 4s1 2 3 4" stroke="currentColor" stroke-width=".8" fill="none"/></svg></div>
+      <p class="muted" style="color:rgba(var(--bg-rgb),.7);max-width:32ch;font-size:14px;">Messages from God to the Heart — a devotional by Lyanette Valiente for walking each day with hope.</p>
+    </div>
+    <div><h5>Explore</h5><ul>
+      <li><a href="book.html">The Book</a></li>
+      <li><a href="author.html">Author</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="devotionals.html">Devotionals</a></li>
+      <li><a href="reader.html">Reader</a></li>
+    </ul></div>
+    <div><h5>Store</h5><ul>
+      <li><a href="store.html">Digital store</a></li>
+      <li><a href="cart.html">Cart</a></li>
+      <li><a href="account.html">My account</a></li>
+      <li><a href="search.html">Search</a></li>
+    </ul></div>
+    <div><h5>Community</h5><ul>
+      <li><a href="prayer-requests.html">Prayer requests</a></li>
+      <li><a href="newsletter.html">Newsletter</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul></div>
+    <div><h5>Help</h5><ul>
+      <li><a href="faq.html">FAQ</a></li>
+      <li><a href="privacy.html">Privacy</a></li>
+      <li><a href="terms.html">Terms</a></li>
+      <li><a href="cookies.html">Cookie policy</a></li>
+    </ul></div>
+  </div>
+  <div class="footer-bottom">
+    <span>&copy; 2026 Lyanette Valiente. All rights reserved.</span>
+    <span>Warm Ivory · Soft Gold · Cormorant Garamond</span>
+  </div>
+</div>
+</footer>
+
+<style>
+  @media (max-width:820px){
+    #sidebar-toggle{ display:inline-flex !important; }
+    .reader-sidebar{ position:fixed; inset:0 20% 0 0; z-index:50; background:var(--bg); transform:translateX(-100%); transition:transform .25s ease; overflow-y:auto; }
+    .reader-sidebar.open-mobile{ transform:translateX(0); box-shadow:var(--shadow-pop); }
+  }
+</style>
+
+<script src="../assets/js/site.js"></script>
+<script src="../assets/js/reader.js"></script>
+</body>
+</html>

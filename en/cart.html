@@ -1,0 +1,263 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Your Cart — Messages from God to the Heart</title>
+<meta name="description" content="Review your cart, apply a coupon, and continue to checkout for your digital edition of Messages from God to the Heart.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,500&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/styles.css">
+<link rel="icon" href="../assets/logo/favicon.svg" type="image/svg+xml">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header" id="site-header" data-od-id="site-header">
+<div class="container header-row">
+  <a class="wordmark" href="index.html">Lyanette Valiente<small>Messages from God to the Heart</small></a>
+  <nav class="main-nav" aria-label="Primary"><ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="book.html">The Book</a></li>
+    <li><a href="store.html">Store</a></li>
+    <li><a href="reader.html">Reader</a></li>
+    <li><a href="author.html">Author</a></li>
+    <li><a href="blog.html">Blog</a></li>
+    <li><a href="devotionals.html">Devotionals</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul></nav>
+  <div class="header-tools">
+    <div class="lang-toggle" role="group" aria-label="Idioma / Language">
+      <a href="../es/cart.html">ES</a>
+      <a href="cart.html" class="active" aria-current="true">EN</a>
+    </div>
+    <a class="icon-btn" href="search.html" aria-label="Search">
+      <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
+    </a>
+    <a class="icon-btn" href="cart.html" aria-label="Cart">
+      <svg viewBox="0 0 24 24"><path d="M4 6h2l1.6 10.2A2 2 0 0 0 9.6 18h7.8a2 2 0 0 0 2-1.6L21 9H7"/><circle cx="10" cy="21" r="1"/><circle cx="18" cy="21" r="1"/></svg>
+      <span class="cart-badge" id="cart-badge" data-count="0">0</span>
+    </a>
+    <button type="button" class="icon-btn menu-toggle" id="menu-toggle" aria-label="Menu" aria-expanded="false">
+      <svg viewBox="0 0 24 24"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+    </button>
+  </div>
+</div>
+<nav class="mobile-nav" id="mobile-nav" aria-label="Mobile"><ul>
+  <li><a href="index.html">Home</a></li>
+  <li><a href="book.html">The Book</a></li>
+  <li><a href="store.html">Store</a></li>
+  <li><a href="reader.html">Reader</a></li>
+  <li><a href="author.html">Author</a></li>
+  <li><a href="blog.html">Blog</a></li>
+  <li><a href="devotionals.html">Devotionals</a></li>
+  <li><a href="contact.html">Contact</a></li>
+  <li><a href="cart.html">Cart</a></li>
+  <li><a href="account.html">My Account</a></li>
+</ul></nav>
+</header>
+
+<main id="main">
+
+  <section class="section-tight" data-od-id="cart-section">
+    <div class="container">
+      <div class="running-head" style="border-bottom:0;padding-bottom:0;">
+        <a href="store.html">← Continue shopping</a>
+        <span>Cart</span>
+      </div>
+      <h1 style="margin-top:var(--space-2);">Your cart</h1>
+
+      <div id="cart-empty" data-od-id="cart-empty" style="display:none;text-align:center;padding:var(--space-6) 0;">
+        <p class="lede muted" style="max-width:44ch;margin:0 auto var(--space-3);">Your cart is empty for now. Browse the digital editions and start reading today.</p>
+        <a class="btn btn-primary" href="store.html" data-od-id="cart-empty-cta">Go to the store</a>
+      </div>
+
+      <div id="cart-filled" data-od-id="cart-filled" style="display:none;grid-template-columns:1.6fr 1fr;gap:var(--space-5);align-items:start;margin-top:var(--space-4);">
+        <div style="min-width:0;">
+          <div id="cart-lines" data-od-id="cart-lines"></div>
+        </div>
+
+        <aside class="card card-surface" data-od-id="cart-summary" style="position:sticky;top:100px;">
+          <h4 style="margin-bottom:var(--space-2);">Order summary</h4>
+
+          <div class="coupon-row" style="margin-bottom:var(--space-2);">
+            <input class="field" type="text" id="coupon-input" placeholder="Coupon code" aria-label="Coupon code" data-od-id="coupon-input">
+            <button class="btn btn-outline btn-sm" type="button" id="coupon-apply" data-od-id="coupon-apply">Apply</button>
+          </div>
+          <p class="form-msg" id="coupon-msg" style="display:none;margin-bottom:var(--space-2);"></p>
+
+          <div class="summary-row"><span>Subtotal</span><span id="sum-subtotal">$0.00</span></div>
+          <div class="summary-row" id="sum-discount-row" style="display:none;"><span id="sum-discount-label">Discount</span><span id="sum-discount">−$0.00</span></div>
+          <div class="summary-row total"><span>Total</span><span id="sum-total">$0.00</span></div>
+
+          <a class="btn btn-gold btn-block" href="checkout.html" id="checkout-btn" style="margin-top:var(--space-3);" data-od-id="checkout-cta">Proceed to checkout</a>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer" id="site-footer" data-od-id="site-footer">
+<div class="container">
+  <div class="footer-grid">
+    <div>
+      <div class="footer-word"><svg class="sprig" viewBox="0 0 40 16" aria-hidden="true"><path d="M1 8c8-8 16-8 20-8s10 0 18 8c-8 8-14 8-18 8S9 16 1 8Z" fill="none" stroke="currentColor" stroke-width="1"/><path d="M20 0v16M8 4c2 2 3 4 3 4s-1 2-3 4M32 4c-2 2-3 4-3 4s1 2 3 4" stroke="currentColor" stroke-width=".8" fill="none"/></svg></div>
+      <p class="muted" style="color:rgba(var(--bg-rgb),.7);max-width:32ch;font-size:14px;">Messages from God to the Heart — a devotional by Lyanette Valiente for walking each day with hope.</p>
+    </div>
+    <div><h5>Explore</h5><ul>
+      <li><a href="book.html">The Book</a></li>
+      <li><a href="author.html">Author</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="devotionals.html">Devotionals</a></li>
+      <li><a href="reader.html">Reader</a></li>
+    </ul></div>
+    <div><h5>Store</h5><ul>
+      <li><a href="store.html">Digital store</a></li>
+      <li><a href="cart.html">Cart</a></li>
+      <li><a href="account.html">My account</a></li>
+      <li><a href="search.html">Search</a></li>
+    </ul></div>
+    <div><h5>Community</h5><ul>
+      <li><a href="prayer-requests.html">Prayer requests</a></li>
+      <li><a href="newsletter.html">Newsletter</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul></div>
+    <div><h5>Help</h5><ul>
+      <li><a href="faq.html">FAQ</a></li>
+      <li><a href="privacy.html">Privacy</a></li>
+      <li><a href="terms.html">Terms</a></li>
+      <li><a href="cookies.html">Cookie policy</a></li>
+    </ul></div>
+  </div>
+  <div class="footer-bottom">
+    <span>&copy; 2026 Lyanette Valiente. All rights reserved.</span>
+    <span>Warm Ivory · Soft Gold · Cormorant Garamond</span>
+  </div>
+</div>
+</footer>
+
+<script src="../assets/js/site.js"></script>
+<script>
+(function(){
+  "use strict";
+  var couponCode = sessionStorage.getItem("mdc-cart-coupon") || "";
+
+  function lineHTML(item){
+    var isEn = item.edition === "English" || item.edition === "en";
+    return ''+
+    '<div class="cart-line" data-od-id="cart-line-'+item.id+'" data-id="'+item.id+'">'+
+      '<div class="book-cover'+(isEn ? ' en' : '')+'" style="aspect-ratio:5/8;">'+
+        '<svg class="sprig" viewBox="0 0 40 16" aria-hidden="true"><path d="M1 8c8-8 16-8 20-8s10 0 18 8c-8 8-14 8-18 8S9 16 1 8Z" fill="none" stroke="currentColor" stroke-width="1"/><path d="M20 0v16M8 4c2 2 3 4 3 4s-1 2-3 4M32 4c-2 2-3 4-3 4s1 2 3 4" stroke="currentColor" stroke-width=".8" fill="none"/></svg>'+
+        '<span class="cover-title" style="font-size:12px;">'+item.title+'</span>'+
+      '</div>'+
+      '<div>'+
+        '<h4 style="margin-bottom:4px;">'+item.title+'</h4>'+
+        '<div class="tag-list"><span class="badge">'+item.edition+'</span><span class="badge">'+item.format+'</span></div>'+
+        '<button type="button" class="btn btn-ghost btn-sm" style="margin-top:8px;padding-left:0;" data-remove="'+item.id+'" data-od-id="cart-remove-'+item.id+'">Remove</button>'+
+      '</div>'+
+      '<div class="qty-stepper" data-od-id="cart-qty-'+item.id+'">'+
+        '<button type="button" data-qty-dec="'+item.id+'" aria-label="Decrease quantity">−</button>'+
+        '<input type="text" inputmode="numeric" value="'+item.qty+'" data-qty-input="'+item.id+'" aria-label="Quantity">'+
+        '<button type="button" data-qty-inc="'+item.id+'" aria-label="Increase quantity">+</button>'+
+      '</div>'+
+      '<div class="price" style="font-size:18px;">'+MDC.fmtUSD(item.price*item.qty)+'</div>'+
+    '</div>';
+  }
+
+  function render(){
+    var cart = MDC.getCart();
+    var empty = document.getElementById("cart-empty");
+    var filled = document.getElementById("cart-filled");
+
+    if(cart.length === 0){
+      empty.style.display = "block";
+      filled.style.display = "none";
+      return;
+    }
+    empty.style.display = "none";
+    filled.style.display = "grid";
+
+    document.getElementById("cart-lines").innerHTML = cart.map(lineHTML).join("");
+
+    var subtotal = MDC.cartSubtotal(cart);
+    var discountPct = MDC.applyCoupon(couponCode);
+    var discount = subtotal * discountPct;
+    var total = subtotal - discount;
+
+    document.getElementById("sum-subtotal").textContent = MDC.fmtUSD(subtotal);
+    var discRow = document.getElementById("sum-discount-row");
+    if(discountPct > 0){
+      discRow.style.display = "flex";
+      document.getElementById("sum-discount-label").textContent = "Discount (" + couponCode.toUpperCase() + ")";
+      document.getElementById("sum-discount").textContent = "−" + MDC.fmtUSD(discount);
+    } else {
+      discRow.style.display = "none";
+    }
+    document.getElementById("sum-total").textContent = MDC.fmtUSD(total);
+
+    wireLines();
+  }
+
+  function wireLines(){
+    document.querySelectorAll("[data-qty-dec]").forEach(function(btn){
+      btn.addEventListener("click", function(){
+        var id = btn.getAttribute("data-qty-dec");
+        var item = MDC.getCart().find(function(i){ return i.id === id; });
+        if(item) MDC.setQty(id, Math.max(1, item.qty - 1));
+        render();
+      });
+    });
+    document.querySelectorAll("[data-qty-inc]").forEach(function(btn){
+      btn.addEventListener("click", function(){
+        var id = btn.getAttribute("data-qty-inc");
+        var item = MDC.getCart().find(function(i){ return i.id === id; });
+        if(item) MDC.setQty(id, item.qty + 1);
+        render();
+      });
+    });
+    document.querySelectorAll("[data-qty-input]").forEach(function(inp){
+      inp.addEventListener("change", function(){
+        var id = inp.getAttribute("data-qty-input");
+        var n = parseInt(inp.value, 10);
+        if(isNaN(n) || n < 1) n = 1;
+        MDC.setQty(id, n);
+        render();
+      });
+    });
+    document.querySelectorAll("[data-remove]").forEach(function(btn){
+      btn.addEventListener("click", function(){
+        MDC.removeFromCart(btn.getAttribute("data-remove"));
+        render();
+      });
+    });
+  }
+
+  document.getElementById("coupon-apply").addEventListener("click", function(){
+    var input = document.getElementById("coupon-input");
+    var code = input.value.trim();
+    var msg = document.getElementById("coupon-msg");
+    var pct = MDC.applyCoupon(code);
+    msg.style.display = "block";
+    if(pct > 0){
+      couponCode = code;
+      sessionStorage.setItem("mdc-cart-coupon", code);
+      msg.className = "form-msg ok";
+      msg.textContent = "Coupon applied: " + Math.round(pct*100) + "% off.";
+    } else {
+      couponCode = "";
+      sessionStorage.removeItem("mdc-cart-coupon");
+      msg.className = "form-msg error";
+      msg.textContent = "Invalid coupon code.";
+    }
+    render();
+  });
+
+  if(couponCode){ document.getElementById("coupon-input").value = couponCode; }
+
+  document.addEventListener("DOMContentLoaded", render);
+  render();
+})();
+</script>
+</body>
+</html>
