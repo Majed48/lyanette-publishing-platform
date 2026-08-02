@@ -1,0 +1,87 @@
+# Netlify configuration — Mensajes de Dios al Corazón (static bilingual site)
+# Publish the repo root as-is; no build step.
+
+[build]
+  publish = "."
+  command = ""
+
+# ---------- Redirects ----------
+
+# Root → Spanish edition (default language). 302 so we can later swap in
+# an Accept-Language chooser without fighting cached 301s.
+[[redirects]]
+  from = "/"
+  to = "/es/index.html"
+  status = 302
+  force = true
+
+# Language-scoped custom 404s (status 404 keeps correct semantics;
+# force is off, so existing files always win).
+[[redirects]]
+  from = "/es/*"
+  to = "/es/404.html"
+  status = 404
+
+[[redirects]]
+  from = "/en/*"
+  to = "/en/404.html"
+  status = 404
+
+# Anything else unknown falls back to the Spanish 404.
+[[redirects]]
+  from = "/*"
+  to = "/es/404.html"
+  status = 404
+
+# ---------- Headers ----------
+# Netlify never serves directory listings, so no config is needed for that.
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Content-Type-Options = "nosniff"
+    X-Frame-Options = "DENY"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    Permissions-Policy = "camera=(), microphone=(), geolocation=(), payment=()"
+    Strict-Transport-Security = "max-age=31536000; includeSubDomains"
+    Content-Security-Policy = "default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'; upgrade-insecure-requests"
+    # NOTE: 'unsafe-inline' is required today — pages carry inline <script> blocks
+    # and inline style attributes. Tightening to nonces/hashes is a backlog item.
+
+# HTML: always revalidate so content updates propagate immediately.
+[[headers]]
+  for = "/*.html"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"
+
+[[headers]]
+  for = "/es/*"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"
+
+[[headers]]
+  for = "/en/*"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"
+
+# CSS/JS are NOT content-hashed, so keep cache modest (1 hour).
+[[headers]]
+  for = "/assets/css/*"
+  [headers.values]
+    Cache-Control = "public, max-age=3600, stale-while-revalidate=86400"
+
+[[headers]]
+  for = "/assets/js/*"
+  [headers.values]
+    Cache-Control = "public, max-age=3600, stale-while-revalidate=86400"
+
+# Images and logos change rarely — cache 1 week.
+[[headers]]
+  for = "/assets/images/*"
+  [headers.values]
+    Cache-Control = "public, max-age=604800"
+
+[[headers]]
+  for = "/assets/logo/*"
+  [headers.values]
+    Cache-Control = "public, max-age=604800"

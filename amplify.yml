@@ -1,0 +1,15 @@
+# AWS Amplify Hosting build spec — static site, no build step.
+version: 1
+frontend:
+  phases:
+    build:
+      commands: []
+  artifacts:
+    baseDirectory: .
+    files:
+      - 'index.html'
+      - 'es/**/*'
+      - 'en/**/*'
+      - 'assets/**/*'
+  cache:
+    paths: []

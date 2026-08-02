@@ -1,0 +1,37 @@
+# AWS Amplify Hosting — custom HTTP headers (repo-root file, picked up
+# automatically on deploy). Mirrors netlify.toml; keep the two in sync.
+customHeaders:
+  - pattern: '**/*'
+    headers:
+      - key: X-Content-Type-Options
+        value: nosniff
+      - key: X-Frame-Options
+        value: DENY
+      - key: Referrer-Policy
+        value: strict-origin-when-cross-origin
+      - key: Permissions-Policy
+        value: camera=(), microphone=(), geolocation=(), payment=()
+      - key: Strict-Transport-Security
+        value: max-age=31536000; includeSubDomains
+      - key: Content-Security-Policy
+        value: "default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'; upgrade-insecure-requests"
+  - pattern: '**/*.html'
+    headers:
+      - key: Cache-Control
+        value: public, max-age=0, must-revalidate
+  - pattern: '/assets/css/*'
+    headers:
+      - key: Cache-Control
+        value: public, max-age=3600, stale-while-revalidate=86400
+  - pattern: '/assets/js/*'
+    headers:
+      - key: Cache-Control
+        value: public, max-age=3600, stale-while-revalidate=86400
+  - pattern: '/assets/images/*'
+    headers:
+      - key: Cache-Control
+        value: public, max-age=604800
+  - pattern: '/assets/logo/*'
+    headers:
+      - key: Cache-Control
+        value: public, max-age=604800
